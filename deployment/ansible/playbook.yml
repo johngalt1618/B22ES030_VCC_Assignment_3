@@ -1,0 +1,10 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Install Python dependencies
+      apt:
+        name: python3-pip
+        state: present
+    - name: Install monitoring dependencies
+      pip:
+        requirements: /home/ubuntu/auto-scaling-vm/monitoring/requirements.txt

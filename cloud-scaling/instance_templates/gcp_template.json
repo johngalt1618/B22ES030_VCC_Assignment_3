@@ -1,0 +1,10 @@
+{
+    "name": "autoscaled-instance",
+    "machineType": "n1-standard-1",
+    "disks": [{
+      "boot": true,
+      "autoDelete": true,
+      "initializeParams": { "sourceImage": "projects/debian-cloud/global/images/debian-10-buster-v20210701" }
+    }]
+  }
+  
